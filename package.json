@@ -1,6 +1,6 @@
 {
   "name": "node-version-magic",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Ensure that your Node process is running with the correct Version",
   "main": "index.js",
   "dependencies": {
