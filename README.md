@@ -1,6 +1,8 @@
 node-version
 ============
 
+[![Build Status](https://travis-ci.org/tjwebb/node-version-magic.svg?branch=master)](https://travis-ci.org/tjwebb/node-version-magic)
+
 Ensure that your Node process is running with the correct Version. If 
 `process.version` is not valid according to `package.json`, then either switch
 to that version using `n` if it is installed, or install it first and then
