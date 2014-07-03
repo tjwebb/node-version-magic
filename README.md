@@ -22,9 +22,21 @@ $ npm install --save node-version
 
 As simple as can be:
 
+```json
+{
+  "engines": {
+    "node": "=0.11.13"
+  }
+}
+```
+
 ```js
 /* top of file */
-require('node-version-magic');
+require('node-version-magic').enforce(function (err, satisfied) {
+  if (err) throw err;
+
+  console.log('My node version is: '+ satisfied); // satisfied = 
+});
 
 // rest of your code...
 ```
