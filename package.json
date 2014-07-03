@@ -7,9 +7,9 @@
     "array-sugar": "^0.2.4",
     "lodash": "^2.4.1",
     "n-api": "^1.2.17",
+    "node-latest-version": "^1.0.1",
     "npmlog": "^0.1.1",
-    "semver": "^2.3.1",
-    "superagent": "^0.18.0"
+    "semver": "^2.3.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",

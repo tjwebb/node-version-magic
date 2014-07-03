@@ -10,7 +10,7 @@ var path = require('path');
 var child = require('child_process');
 var n = require('n-api');
 var semver = require('semver');
-var Resolver = require('./resolver');
+var Resolver = require('node-latest-version');
 var _ = require('lodash');
 
 exports.enforce = function (pkg, callback) {
