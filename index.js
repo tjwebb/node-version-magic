@@ -16,6 +16,9 @@ var _ = require('lodash');
 exports.enforce = function (pkg, callback) {
   log.verbose('enforce', pkg.engines);
 
+  if (!_.isObject(pkg)) {
+    throw new TypeError('package must be an object');
+  }
   if (!_.isFunction (callback)) {
     throw new TypeError('callback must be a function');
   }
