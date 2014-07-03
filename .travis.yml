@@ -1,0 +1,27 @@
+language: c
+
+before_install:
+  - rm -rf ~/.nvm
+  - wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -qO n
+  - chmod +x n
+  - sudo cp n /usr/local/bin/n
+  - sudo chmod -R a+xw /usr/local
+
+install:
+  - n latest
+  - npm install
+
+script:
+  - npm test
+
+notifications:
+  email: false
+
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: "ZXjyrlh+ADl4RQWiNTzlF/DC3I21e0RYyaqmQpg2TatzH8lyD6pk4rAgc+zLNt9w3JEBtYJuwXB9uEpgrAPF8bTazcz04udUsV3ysmg2UgdRvx+4XoHIfDQSTXccXi/a1XXe8P10/vsmVGV8OeUcpsDQvKpl/ckQeGt4w3yI5H4="
+  on:
+    tags: true
+    repo: tjwebb/node-version-magic

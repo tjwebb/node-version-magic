@@ -1,6 +1,5 @@
 global.log = require('npmlog');
 log.heading = 'node-version';
-log.level = 'verbose';
 
 var assert = require('chai').assert;
 
@@ -17,11 +16,19 @@ describe('node-version-resolver', function () {
 
 });
 
-describe('node-version', function () {
+describe('node-version-magic', function () {
 
   describe('#enforce', function () {
     it('should validate this process', function () {
-      //assert.
+      require('../').enforce(require('../package'));
+    });
+    it('should start second process', function (done) {
+      if (process.version === 'v0.11.12') done();
+
+      require('../').enforce({ engines: { node: '=0.11.12' } }, function (satisfied) {
+        console.log(satisfied);
+        done();
+      });
     });
   });
 

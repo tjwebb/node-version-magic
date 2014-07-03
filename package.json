@@ -1,5 +1,5 @@
 {
-  "name": "node-version",
+  "name": "node-version-magic",
   "version": "1.0.0",
   "description": "Ensure that your Node process is running with the correct Version",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "node": ">=0.10.28"
   },
   "scripts": {
-    "test": "mocha -R spec spec/"
+    "test": "LOG_LEVEL=verbose mocha -R spec spec/ --verbose"
   },
   "repository": {
     "type": "git",

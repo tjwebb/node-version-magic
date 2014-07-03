@@ -24,7 +24,7 @@ As simple as can be:
 
 ```js
 /* top of file */
-require('node-version')
+require('node-version-magic');
 
 // rest of your code...
 ```
