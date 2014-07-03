@@ -4,8 +4,13 @@
   "description": "Ensure that your Node process is running with the correct Version",
   "main": "index.js",
   "dependencies": {
+    "array-sugar": "^0.2.4",
+    "lodash": "^2.4.1",
     "n-api": "^1.2.17",
-    "npmlog": "^0.1.1"
+    "node-version-resolver": "^0.2.7",
+    "npmlog": "^0.1.1",
+    "semver": "^2.3.1",
+    "superagent": "^0.18.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
@@ -15,7 +20,7 @@
     "node": ">=0.10.28"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec spec/"
   },
   "repository": {
     "type": "git",
