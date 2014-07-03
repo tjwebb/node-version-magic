@@ -21,7 +21,7 @@ deploy:
   provider: npm
   email: me@traviswebb.com
   api_key:
-    secure: "ZXjyrlh+ADl4RQWiNTzlF/DC3I21e0RYyaqmQpg2TatzH8lyD6pk4rAgc+zLNt9w3JEBtYJuwXB9uEpgrAPF8bTazcz04udUsV3ysmg2UgdRvx+4XoHIfDQSTXccXi/a1XXe8P10/vsmVGV8OeUcpsDQvKpl/ckQeGt4w3yI5H4="
+    secure: "Th1MOF7eCDAzql49EVZoRz6Uxumjbq5v47NsA0HyOQHZkyY7XhIRuXLx/ryg4ZUOs3Eh8h29fSmoIu6w/3HacouskLuB5438NBXS9sUeOaPQ/DT7z8EhrOH/eYiGFmkNYN1d6xQfOr/mOdTl0iGsWsYk78k28PeW2282mINeYCM="
   on:
     tags: true
     repo: tjwebb/node-version-magic
