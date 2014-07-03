@@ -4,7 +4,6 @@
   "description": "Ensure that your Node process is running with the correct Version",
   "main": "index.js",
   "dependencies": {
-    "array-sugar": "^0.2.4",
     "lodash": "^2.4.1",
     "n-api": "^1.2.17",
     "node-latest-version": "^1.0.1",
