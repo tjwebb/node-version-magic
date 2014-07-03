@@ -11,18 +11,23 @@ var child = require('child_process');
 var n = require('n-api');
 var semver = require('semver');
 var Resolver = require('./resolver');
+var _ = require('lodash');
 
 exports.enforce = function (pkg, callback) {
   log.verbose('enforce', pkg.engines);
 
+  if (!_.isFunction (callback)) {
+    throw new TypeError('callback must be a function');
+  }
+
   if (!pkg.engines || !pkg.engines.node) {
-    log.warn(pkg.name, 'I can\'t validate the node version if your engines.node is empty in pkg.json');
-    return;
+    log.warn(pkg.name, 'I can\'t validate the node version if your engines.node is empty in package.json');
+    return callback({ message: 'engines.node is not set in package.json' });
   }
 
   if (semver.satisfies(process.version, pkg.engines.node)) {
     log.info(pkg.name, process.version, 'satisfies', pkg.engines.node);
-    return;
+    return callback(null, process.version);
   }
 
   var r = new Resolver(function () {
@@ -43,6 +48,6 @@ exports.enforce = function (pkg, callback) {
     n.use.sync(satisfied, argv.join(' '));
     process.exit(0);
 
-    callback(satisfied);
+    return callback(null, satisfied);
   });
 };

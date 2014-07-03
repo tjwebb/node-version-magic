@@ -7,7 +7,6 @@
     "array-sugar": "^0.2.4",
     "lodash": "^2.4.1",
     "n-api": "^1.2.17",
-    "node-version-resolver": "^0.2.7",
     "npmlog": "^0.1.1",
     "semver": "^2.3.1",
     "superagent": "^0.18.0"
@@ -24,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tjwebb/node-version.git"
+    "url": "git://github.com/tjwebb/node-version-magic.git"
   },
   "keywords": [
     "n",
@@ -39,7 +38,7 @@
   "author": "Travis Webb <me@traviswebb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjwebb/node-version/issues"
+    "url": "https://github.com/tjwebb/node-version-magic/issues"
   },
-  "homepage": "https://github.com/tjwebb/node-version"
+  "homepage": "https://github.com/tjwebb/node-version-magic"
 }
