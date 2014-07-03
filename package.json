@@ -1,0 +1,40 @@
+{
+  "name": "node-version",
+  "version": "1.0.0",
+  "description": "Ensure that your Node process is running with the correct Version",
+  "main": "index.js",
+  "dependencies": {
+    "n-api": "^1.2.17",
+    "npmlog": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  },
+  "engines": {
+    "node": ">=0.10.28"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjwebb/node-version.git"
+  },
+  "keywords": [
+    "n",
+    "nvm",
+    "node",
+    "version",
+    "manager",
+    "package.json",
+    "engines",
+    "harmony"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjwebb/node-version/issues"
+  },
+  "homepage": "https://github.com/tjwebb/node-version"
+}
