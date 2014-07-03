@@ -37,7 +37,7 @@ As simple as can be:
 require('node-version-magic').enforce(function (err, satisfied) {
   if (err) throw err;
 
-  console.log('My node version is: '+ satisfied); // satisfied = 
+  console.log('My node version is: '+ satisfied); // satisfied = 0.11.13
 });
 
 // rest of your code...
